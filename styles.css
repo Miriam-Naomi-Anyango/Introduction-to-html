@@ -1,3 +1,14 @@
-p{
-    background-color: brown;
+a:visited {
+    color: aqua;
+    text-decoration: dotted;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+a:active {
+    color: blueviolet;
+    text-decoration: underline;
 }
