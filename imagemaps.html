@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--IMAGE MAPS-->
+    <!--HTML image maps enable one to create clickable areas on an image
+    An image map essentially enables you to perform various activities 
+    on the same image but on different parts depending on where you click
+    
+    Insert an image using an <img> tag
+    Use the usemap attribute to create the image map with #button at 
+    the beginning of value name-->
+
+    <img
+      src="https://i.dailymail.co.uk/i/pix/2012/06/29/article-2166697-13DB2ADF000005DC-143_634x476.jpg"
+      alt="African home"
+      usemap="#africanhome"
+    />
+
+    <!--Map is then used to create an image map using the name attribute
+    and the name given as value for usemap attribute as follows-->
+
+    <!--Add a clickable area using the area element, and shape of the clickable area must be defined.
+    You must also define some coordinates to be able to place clickable areas onto the image-->
+
+    <map name="africanhome">
+      <area
+        target="_blank"
+        alt="Standalone"
+        href="formatting.html"
+        coords="193,304,258,337"
+        shape="rect"
+      />
+      <area
+        target="_blank"
+        alt="Bike"
+        href="paragraphs.html"
+        coords="488,287,485,298,472,298,464,305,461,317,463,325,468,331,478,333,485,333,493,330,499,321,500,309,507,315,509,324,516,329,525,338,533,338,539,332,544,324,545,314,542,304,538,297,531,292,528,285,517,283,508,278,499,275,494,278"
+        shape="poly"
+      />
+    </map>
+  </body>
+</html>
