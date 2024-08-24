@@ -38,5 +38,27 @@
   If you want the background image to cover the whole size of the element, set background-size to Cover.
   If the image is small but you want to stretch it and force it to fit the size of the element
   the define the background size property and set it to 100% 100%-->
+
+  <!--PICTURE ELEMENT-->
+  <!--The picture element is used to display different images on different screen sizes.
+  The picture element is important when it comes to bandwidth issues. As in it enebles 
+  you display what is commensurate to the screensize being used currently.
+
+  
+  It is also important as it enables one to put more than one image format such that if a particular
+  browser does not support a certain format of image then the one that is supported is the one 
+  that will be displayed.-->
+
+  <picture>
+    <source srcset="example.png" media="(min-width: 650px)">
+    <source srcset="example.jpg" media="(min-width: 450px)">
+    <img src="this.png" alt="picture">
+  </picture>
+
+  <picture>
+    <source srcset="example.png">
+    <source srcset="example,jpg">
+    <img src="that.jpg" alt="image">
+  </picture>
   </body>
 </html>
